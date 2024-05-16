@@ -4003,7 +4003,7 @@ StackedVlnPlot<- function(object, features, idents = NULL, split.by = NULL,
     theme(axis.text.x = element_text(angle = angle.x, hjust = hjust.x, vjust = vjust.x)) +
     theme(axis.text.x = element_text(size = 10))
 
-  p<- patchwork::wrap_plots(plotlist = plot_list, ncol = 1)
+  p<- patchwork::wrap_plots(plotlist = plot_list, ncol = 1) + plot_layout(guides = "keep")
   return(p)
 }
 
