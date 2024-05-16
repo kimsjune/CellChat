@@ -4037,7 +4037,7 @@ modify_vlnplot<- function(object,
   p <- p + theme(text = element_text(size = 10)) + theme(axis.line = element_line(size=line.size)) +
     theme(axis.text.x = element_text(size = 10), axis.text.y = element_text(size = 8), axis.line.x = element_line(colour = 'black', size=line.size),axis.line.y = element_line(colour = 'black', size= line.size))
   # theme(plot.title = element_text(size = 10, face = "bold", hjust = 0.5))
-  p <- p + theme(legend.position = "none",
+  p <- p + theme(legend.position = "right",
                  plot.title= element_blank(),
                  axis.title.x = element_blank(),
                  axis.text.x = element_blank(),
